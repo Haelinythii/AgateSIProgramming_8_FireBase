@@ -22,7 +22,7 @@ public class ResourceController : MonoBehaviour
         {
             //simpan value level ke progress di data manager
             UserDataManager.Progress.ResourcesLevels[index] = value;
-            UserDataManager.Save();
+            UserDataManager.Save(true);
         }
         get
         {
@@ -114,7 +114,7 @@ public class ResourceController : MonoBehaviour
             if (!UserDataManager.HasResources(index))
             {
                 UserDataManager.Progress.ResourcesLevels.Add(_level);
-                UserDataManager.Save();
+                UserDataManager.Save(true);
             }
         }
         ResourceImage.color = IsUnlocked ? Color.white : Color.grey;
