@@ -17,7 +17,7 @@ public static class UserDataManager
 
         if (!PlayerPrefs.HasKey(PROGRESS_KEY)) //Jika belum ada key tersebut, buat baru
         {
-            //Progress = new UserProgressData();
+            Progress = new UserProgressData();
             Save(true);
         }
         else //jika sudah ada, langsung ambil dari playerprefs
@@ -81,6 +81,8 @@ public static class UserDataManager
 
         if (uploadToCloud)
         {
+            AnalyticsManager.SetUserProperties("gold", Progress.Gold.ToString());
+
             byte[] data = Encoding.Default.GetBytes(json);
             StorageReference targetStorage = GetTargetCloudStorage();
 

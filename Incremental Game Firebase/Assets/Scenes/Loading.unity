@@ -1350,6 +1350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a349815ada86114a85b07143a491642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localButton: {fileID: 488255140}
+  cloudButton: {fileID: 1124508860}
 --- !u!4 &1678315726
 Transform:
   m_ObjectHideFlags: 0
@@ -1646,7 +1648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000021260005, y: 0.000051346393}
+  m_AnchoredPosition: {x: 0.000011290289, y: 0.000062999}
   m_SizeDelta: {x: -0.000030506604, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1802055846
